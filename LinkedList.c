@@ -20,6 +20,7 @@ typedef struct node {
 } node;
 
 
+
 linkedList_t create() {
     linkedList_t list = calloc(sizeof(linkedList), 1);
     list->header = calloc(sizeof(node_t*), 1);
@@ -148,10 +149,11 @@ node_t getIterator(linkedList_t list) {
 void* iteratorNext(linkedList_t list) {
     node_t iterator = list->iterator;
     if (iterator->next == NULL) {
-        return NULL;
+        iterator->next = list->header->next;
+    } else {
+        iterator = iterator->next;
+        list->iterator = iterator;
     }
-    iterator = iterator->next;
-    list->iterator = iterator;
     return iterator->item;
 }
 
