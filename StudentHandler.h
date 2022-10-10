@@ -13,7 +13,7 @@ void printStudentInfo(student * student);
 void printAllStudentsInfo(linkedList_t list);
 student* searchStudentById(uint16_t studentId);
 student* searchStudentByLastName(char* lastName);
-void addAStudent(student * student);
+void addAStudent(student * student, linkedList_t list);
 
 
 #endif; //LINKEDLIST_STUDENTHANDLER_

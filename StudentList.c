@@ -19,7 +19,7 @@ student * getStudent(student* student, linkedList_t list){
 }
 
 student * getStudent_It(linkedList_t list) {
-    student *st = getStudent_It(list);
+    student *st = getIterator(list);
     iteratorNext(list);
     return st;
 }

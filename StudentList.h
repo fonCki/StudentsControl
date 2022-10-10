@@ -9,6 +9,7 @@
 
 typedef linkedList_t student_list_t;
 
+linkedList_t createListStudent();
 LinkedListReturnCode_t addStudent(student* student, linkedList_t list);
 LinkedListReturnCode_t getStudent(student* student, linkedList_t list);
 student * getStudent_It(linkedList_t list);
