@@ -11,11 +11,13 @@
 
 int main() {
     linkedList_t list = createListStudent();
-    student* student1 = createStudent("Jose", "Lacambra", 23, "Argentina");
-    student* student2 = createStudent("Alfonso", "Ridao", 33, "Denmark");
+    addAStudent(createStudent("Alfonso", "Ridao", 20, "Argentina"), list);
+    addAStudent(createStudent("Vlad", "Lazar", 23, "Romania"), list);
+    addAStudent(createStudent("Tomas", "NotSure", 17, "Poland"), list);
+    addAStudent(createStudent("Benjamin", "mmmmm", 23, "Slovakia"), list);
+
 //    printInfo(student1);
 
-    addAStudent(student1, list);
-    addAStudent(student2, list);
+
     printAllStudentsInfo(list);
 }

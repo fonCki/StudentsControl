@@ -15,7 +15,7 @@ typedef struct student {
 }student;
 
 student * createStudent( char* firstName, char* lastName, uint8_t studentId, char* nationality) {
-    student * _student = calloc(sizeof(_student), 1);
+    student * _student = calloc(sizeof(student), 1);
     if (NULL == _student) {
         return NULL;
     }
