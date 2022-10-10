@@ -29,7 +29,7 @@ LinkedListReturnCode_t removeItem(linkedList_t list, void* item);
 void * pickItemByIndex(linkedList_t list, int16_t index);
 uint16_t length(linkedList_t list);
 void clear(linkedList_t list);
-node_t getIterator();
+void* getIterator();
 void* iteratorNext();
 
 

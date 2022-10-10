@@ -142,8 +142,8 @@ void clear(linkedList_t list) {
     }
 }
 
-node_t getIterator(linkedList_t list) {
-    return list->iterator;
+void* getIterator(linkedList_t list) {
+    return list->iterator->item;
 }
 
 void* iteratorNext(linkedList_t list) {
