@@ -6,13 +6,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <printf.h>
+#include "Student.h"
 
-typedef struct student {
-    char firstName[10];
-    char lastName[10];
-    uint8_t studentId;
-    char nationality[15];
-}student;
+
 
 student * createStudent( char* firstName, char* lastName, uint8_t studentId, char* nationality) {
     student * _student = calloc(sizeof(student), 1);

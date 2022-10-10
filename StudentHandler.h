@@ -11,8 +11,8 @@ typedef student_list_t student_list_t;
 
 void printStudentInfo(student * student);
 void printAllStudentsInfo(linkedList_t list);
-student* searchStudentById(uint16_t studentId);
-student* searchStudentByLastName(char* lastName);
+student* searchStudentById(uint16_t studentId, linkedList_t list);
+student* searchStudentByLastName(char* lastName, linkedList_t list);
 void addAStudent(student * student, linkedList_t list);
 
 
